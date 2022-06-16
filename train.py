@@ -13,7 +13,7 @@ batchsz = 1
 Acnt = 4554
 Bcnt = 5018
 
-path = '/content/ColabNotebooks/2nd/dataset/ROI/Series_Model_output'
+path = '/content/ColabNotebooks/2nd/dataset/ROI/Series_Model_output/'
 
 A_path = '1-fold/A/'
 B_path = '1-fold/B/'
