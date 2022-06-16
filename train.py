@@ -13,7 +13,7 @@ batchsz = 1
 Acnt = 4554
 Bcnt = 5018
 
-path = '/Content/ColabNotebooks/2nd/dataset/ROI/Series_Model_output'
+path = '/content/ColabNotebooks/2nd/dataset/ROI/Series_Model_output'
 
 A_path = '1-fold/A/'
 B_path = '1-fold/B/'
@@ -115,12 +115,12 @@ print(fusion_model.summary())
 # set tensorborad
 
 current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-train_log_dir = '/Content/ColabNotebooks/2nd/Ablation/Networks/1st_Proposed_Method/ND/1-fold/logs'
+train_log_dir = '/content/ColabNotebooks/2nd/Ablation/Networks/1st_Proposed_Method/ND/1-fold/logs'
 train_summary_writer = tf.summary.create_file_writer(train_log_dir)
 
 # set CheckPoint
 ckpt = tf.train.Checkpoint(step=tf.Variable(1), optimizer=optimizer, net=fusion_model)
-checkpoint_path = "/Content/ColabNotebooks/2nd/Ablation/Networks/1st_Proposed_Method/ND/1-fold/ckp"
+checkpoint_path = "/content/ColabNotebooks/2nd/Ablation/Networks/1st_Proposed_Method/ND/1-fold/ckp"
 manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=None)
 
 """traning loop"""
